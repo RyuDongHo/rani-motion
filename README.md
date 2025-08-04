@@ -5,9 +5,9 @@ A simple and powerful React animation library with TypeScript support, presets, 
 ## Installation
 
 ```bash
-npm install rani
+npm install rani-motion
 # or
-yarn add rani
+yarn add rani-motion
 ```
 
 ## Quick Start
