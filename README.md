@@ -14,7 +14,7 @@ yarn add rani-motion
 
 ### Method 1: Using animated.div (Recommended)
 ```tsx
-import { animated } from 'rani';
+import { animated } from 'rani-motion';
 
 function App() {
   return (
@@ -46,7 +46,7 @@ function App() {
 
 ### Method 2: Using Component Wrappers
 ```tsx
-import { RaniOnView, RaniHover, RaniClick } from 'rani';
+import { RaniOnView, RaniHover, RaniClick } from 'rani-motion';
 
 function App() {
   return (
@@ -79,7 +79,7 @@ import {
   RaniOnView, 
   AnimationPreset, 
   CustomAnimation 
-} from 'rani';
+} from 'rani-motion';
 
 const customAnim: CustomAnimation = {
   initial: { opacity: 0, transform: 'scale(0.8)' },
@@ -122,7 +122,7 @@ const MyComponent: React.FC = () => {
 The `animated` object provides animated versions of common HTML elements:
 
 ```tsx
-import { animated } from 'rani';
+import { animated } from 'rani-motion';
 
 // All these elements support the same animation props
 <animated.div animation="fadeInUp" duration={600} />
@@ -148,7 +148,7 @@ import { animated } from 'rani';
 ### Custom Animations with TypeScript
 
 ```tsx
-import { animated, CustomAnimation } from 'rani';
+import { animated, CustomAnimation } from 'rani-motion';
 
 // Define custom animation
 const slideRotateAnim: CustomAnimation = {
@@ -179,7 +179,7 @@ const slideRotateAnim: CustomAnimation = {
 ### Hover Animations
 
 ```tsx
-import { RaniHover, CustomHoverAnimation } from 'rani';
+import { RaniHover, CustomHoverAnimation } from 'rani-motion';
 
 const glowHover: CustomHoverAnimation = {
   default: { 
@@ -198,7 +198,7 @@ const glowHover: CustomHoverAnimation = {
 ### Stagger Animations
 
 ```tsx
-import { RaniStagger } from 'rani';
+import { RaniStagger } from 'rani-motion';
 
 const items = ['Item 1', 'Item 2', 'Item 3', 'Item 4'];
 
@@ -216,7 +216,7 @@ const items = ['Item 1', 'Item 2', 'Item 3', 'Item 4'];
 ### Animation Provider & Context
 
 ```tsx
-import { RaniProvider, useRaniAnimation } from 'rani';
+import { RaniProvider, useRaniAnimation } from 'rani-motion';
 
 function App() {
   return (
@@ -244,7 +244,7 @@ function MyAnimatedApp() {
 ### Accessibility & Reduced Motion
 
 ```tsx
-import { useReducedMotion } from 'rani';
+import { useReducedMotion } from 'rani-motion';
 
 function AccessibleAnimation() {
   const prefersReducedMotion = useReducedMotion();
@@ -263,7 +263,7 @@ function AccessibleAnimation() {
 ### Custom Hooks
 
 ```tsx
-import { useIntersectionObserver, useReducedMotion } from 'rani';
+import { useIntersectionObserver, useReducedMotion } from 'rani-motion';
 
 function CustomAnimatedComponent() {
   // 접근성 고려
