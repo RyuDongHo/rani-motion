@@ -1,0 +1,33 @@
+# Development files
+src/
+demo/
+examples/
+*.tgz
+
+# Config files
+rollup.config.js
+tsconfig.json
+.eslintrc.js
+jest.config.js
+
+# IDE
+.vscode/
+.idea/
+
+# Logs
+*.log
+npm-debug.log*
+
+# Dependencies
+node_modules/
+
+# Build artifacts (keep dist/)
+# dist/ - we want to include this
+
+# Git
+.git/
+.gitignore
+
+# Other
+*.md
+!README.md
