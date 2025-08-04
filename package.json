@@ -1,6 +1,6 @@
 {
   "name": "rani-motion",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A simple and powerful React animation library with TypeScript support - animated.div style components with accessibility-first approach",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
